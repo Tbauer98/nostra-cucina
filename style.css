@@ -1,0 +1,87 @@
+/* Hauptlayout */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Hero Section: Zentrierte Ausrichtung */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+    background-color: #fcfaf8; /* Heller Ton passend zum Header */
+    padding: 2rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #9d3f3f; /* Angelehnt an das rote Logo */
+    margin: 0;
+}
+
+.btn-primary {
+    background-color: #404c48; /* Angelehnt an die Footer-Farbe */
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2f3835;
+}
+
+/* Spezialitäten Sektion: Flexbox-Grid */
+.specials-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.specials-section h2 {
+    margin-bottom: 2rem;
+    color: #404c48;
+}
+
+.specials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* Wichtig für Responsiveness */
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.special-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px; /* Karten wachsen und schrumpfen flexibel */
+    background-color: #fcfaf8;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.special-card h3 {
+    color: #9d3f3f;
+    margin-bottom: 1rem;
+}

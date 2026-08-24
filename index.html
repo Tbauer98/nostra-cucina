@@ -7,6 +7,51 @@
     <title>Nostra Cucina</title>
 </head>
 <body>
+
+<!-- ================ Header =============== -->
+
+ <header class="site-header">
+    <div class="header-inner">
+ 
+     
+     <a href="index.html" class="logo">
+        <img src="nostra_cucina_logo_transparent.png" alt="Nostra Cucina">
+      </a>
+ 
+      <!-- MITTE: Navigation -->
+      <nav class="main-nav" aria-label="Hauptmenü">
+        <ul class="nav-list">
+          <li><a href="about.html">Über uns</a></li>
+          <li><a href="menue.html">Speisekarte</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+ 
+      <!-- RECHTS: Burger-Button -->
+      <button class="burger" type="button"
+              aria-label="Menü öffnen"
+              aria-expanded="false"
+              aria-controls="mobile-nav">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+ 
+    </div>
+ 
+    <!-- ============ Ausklappmenü, das der Burger steuert ============== -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobiles Menü" hidden>
+      <ul>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="menue.html">Speisekarte</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
     <main class="main-content">
         <!-- Hero Sektion -->
         <section class="hero-section">
